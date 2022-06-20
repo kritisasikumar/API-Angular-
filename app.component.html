@@ -1,0 +1,12 @@
+<form #gfg = "ngForm" (ngSubmit)="onSubmit(gfg.value)">    
+  <p><input type="text" name = 'firstName' ngModel placeholder="FirstName"></p>
+  <p><input type="text" name = 'lastName' ngModel placeholder="LastName"></p>
+  <p><input type="text" name = 'email' ngModel placeholder="Email"></p>
+  <p><input type="text" name = 'password' ngModel placeholder="Password"></p>
+  <p style="padding-left:50px"><button type="submit">Submit</button></p>
+  <p><button type="click" (click)="getData()">Press to get values</button></p>
+</form>
+<br>
+<!-- {{ gfg.value | json }} -->
+
+<router-outlet></router-outlet>
